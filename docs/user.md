@@ -131,7 +131,7 @@ Response (error)
   "message": "password is required",
   
   "status": "error",
-  "message": "passwordConfirm must be same as password",}
+  "message": "passwordConfirm must be same as password"}
 ```
 ## LOGOUT
 - endpoint : DELETE api/auth/logout
