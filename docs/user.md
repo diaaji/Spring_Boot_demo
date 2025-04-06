@@ -123,6 +123,9 @@ Response (error)
 {
   "status": "error",
   "message": "Username is already taken",
+
+  "status": "error",
+  "message": "Username can't be null",
   
   "status": "error",
   "message": "password is cant be same as current password",
