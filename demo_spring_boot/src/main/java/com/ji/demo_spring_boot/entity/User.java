@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Getter
@@ -25,14 +26,14 @@ public class User {
 
     private String token;
 
-    @Column (name = "first_name")
+    @Column(name = "first_name", nullable = false)
     private String firstName;
 
     @Column (name = "last_name")
     private String lastName;
 
-    @Column (name = "expire_at")
-    private String expireAt;
+    @Column(name = "expire_at", nullable = false)
+    private LocalDateTime expireAt;
 
     @OneToMany (mappedBy = "username", cascade = CascadeType.ALL)
     private List<Contact> contacts;

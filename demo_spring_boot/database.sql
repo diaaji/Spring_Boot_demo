@@ -43,6 +43,7 @@ CREATE TABLE Addresses
 SELECT * FROM Contacts;
 ALTER TABLE Contacts DROP COLUMN address;
 
+ALTER TABLE users MODIFY expire_at DATETIME;
 SELECT * FROM users;
 DESC users;
 SELECT * FROM Contacts;
@@ -50,3 +51,5 @@ DESC Contacts;
 
 SELECT * FROM Addresses;
 DESC Addresses;
+
+SHOW COLUMNS FROM users LIKE 'expire_at';
