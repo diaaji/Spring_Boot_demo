@@ -99,10 +99,10 @@ Response (error)
 Request body
 ```json
 {
-  "username": "string", // cant be same as current username
-  "name": "string", // cant be blank
-  "password": "string" // cant be same as current password
-  "passwordConfirm": "string" // must be same as password
+  "username": "string",
+  "name": "string", 
+  "password": "string",
+  "passwordConfirm": "string"
 }
 
 ```
@@ -110,13 +110,13 @@ Response (success)
 
 ```json
 {
-  status: "success",
+  "status": "success",
   "data": {
     "username": "string",
     "name": "string"
   }
 }
-}
+
 ```
 Response (error)
 ```json
